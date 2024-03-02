@@ -1,0 +1,47 @@
+{
+  "id": "4af94fae-d970-42a5-af92-a9fabfb9c858",
+  "version": "2.0",
+  "name": "Microsoft_Pdf_Download",
+  "url": "https://www.india.gov.in",
+  "tests": [{
+    "id": "32526b97-c40e-44ae-b9b0-9d37481f0140",
+    "name": "Untitled.side",
+    "commands": [{
+      "id": "43023e58-ad9e-4388-bf91-fba8009ed520",
+      "comment": "",
+      "command": "open",
+      "target": "https://labourbureau.gov.in/newscontent/ln",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43bf614f-6adc-435f-8088-ec393a359484",
+      "comment": "",
+      "command": "pause",
+      "target": "\"300\"",
+      "targets": [],
+      "value": "\"\""
+    }, {
+      "id": "3727a2db-8d9e-47eb-8204-9058796c3f0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) b",
+      "targets": [
+        ["css=li:nth-child(1) b", "css:finder"],
+        ["xpath=//div[@id='notice_first']/div/ul/li/a/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Document Verification of Candidates for the Post of Canteen Attendent Post Code NW10623  Size :  757.22 KB Download 125')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cd992bb3-e44a-46da-bd76-2a6cecb62151",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["32526b97-c40e-44ae-b9b0-9d37481f0140"]
+  }],
+  "urls": ["https://www.india.gov.in/"],
+  "plugins": []
+}
